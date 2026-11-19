@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">☕ Brew Haven</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-btn" onclick="showCart()">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Fresh Coffee, Happy Moments</h2>
+            <p>Experience the perfect taste of freshly brewed coffee.</p>
+            <a href="#menu" class="main-btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Special Menu</h2>
+        <p class="subtitle">Taste the happiness in every bite.</p>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500" alt="Coffee">
+                <h3>Hot Coffee</h3>
+                <p>Freshly brewed aromatic coffee.</p>
+                <h4>₹120</h4>
+                <button onclick="addToCart('Hot Coffee',120)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="Cold Coffee">
+                <h3>Cold Coffee</h3>
+                <p>Chilled and creamy coffee.</p>
+                <h4>₹150</h4>
+                <button onclick="addToCart('Cold Coffee',150)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500" alt="Croissant">
+                <h3>Chocolate Croissant</h3>
+                <p>Delicious and crispy pastry.</p>
+                <h4>₹100</h4>
+                <button onclick="addToCart('Chocolate Croissant',100)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and creamy chocolate cake.</p>
+                <h4>₹180</h4>
+                <button onclick="addToCart('Chocolate Cake',180)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Our Cafe</h2>
+        <p>
+            Welcome to Brew Haven Cafe! We serve freshly brewed coffee,
+            delicious snacks and tasty desserts. Our goal is to make
+            every visit a wonderful experience.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: brewhaven@gmail.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Coimbatore, Tamil Nadu</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Brew Haven Cafe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
